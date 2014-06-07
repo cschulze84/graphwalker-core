@@ -1,21 +1,18 @@
 language: java
 jdk:
-  - openjdk7
   - oraclejdk7
-  - oraclejdk8
+
+before_install: "git clone -b travis `git config --get remote.origin.url` target/travis"
+script: "[ ${TRAVIS_PULL_REQUEST} = 'false' ] && mvn clean deploy --settings target/travis/settings.xml || mvn clean verify --settings target/travis/settings.xml"
+
 
 # whitelist
 branches:
   only:
-    - master
+    - develop
 
 env:
   global:
-    - secure: "Si+FksmD04Qev09hkYqWYN4rYQderrvMt6/kZBTgEek/v4Bd8QVCcbkZemYQCLnfhm94fNJDVrvpbrZhkeSWhCXKnnsYMH9oaxQWSd4aUI55V9QAseVAWMod5d2TSD7kTIo1owV5xh9LHTLmwnv4v6WmV3dSHSQc0zQh09dFC/M="
-    - secure: "IVcJyf13GCwLkpYKqygwTH9f3EG1YiqdmXWPCt5d9DXKKLjbSq/MFQ/nwdgfgfJAsgrSXN0I+6fIf8/INtI4YcKTpzAblXdeAkWdVrD4xpRSC7TpEHdEGMWEBtSWzJy8b92F2cxCXuk/QPDK4d8/QuelkFD9C9IztmgSqq7fQQg="
+    - secure: "PBtONh/4EVU6WMwtFe112FqkqGYoM2vyPkIaqS1NQ8TrcJoKVSq48PTw43SNVmG5Ghg2DntQxaKoyKGsE7OehmkWKoshyy9QtP9YRL1DeDiirq4fDFyPD/YjAK9g83cK05TJhGMTwZs9GvKf1Od+oeIrk8Sj2uv+nLb7X5GB7MY="
+    - secure: "OlwDR/+n8T/uKzIO7AuODXei2sGUMuDTQkhxZaAtuJzcJvImsaRSE47rDOummEHfV2/bl7PhnC6inLw676vtmVQEsdEbYZkQgPk9NmtuMWLevW5CsvNb75UHVKb3xmcdFaBUKRDx5gVCA6xXucKY6QulommtiqStK49UYnNah6A="
 
-before_install:
- - sudo apt-get update -qq
-
-install:
-  mvn -q clean install
