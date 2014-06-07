@@ -13,5 +13,5 @@ branches:
 
 env:
   global:
-    - secure: "CNosV3k25xOd5h3Z0mHb6t33fg+fljBZGMu9FsTFkSJvD+FsasxATf0qN1w/69991Q4OPg6Yop6VUx4dUKGIo+aUGlLdSJM6dOcCBEdbbkB19hJzOeB3lH9bf3FjsUCJ8qFY2QUlOISWG757sgsW9fbc3iOQR31Ls1HGvzqBNPM="
-    - secure: "QMpDlm1NfsWbhHuw8RT9L0houHGvzGSvnM35BTHJU/aXsd7nh2PDEpIJ2Ege3Hm4YpGTKVPrwGffdp7eekwsfrTr4CH/MUoQBPmAsyTqvCc0zCx6bLkxd2Ij98/aIeOjXd+nwPHKd9sBspp+U2wVu6AgkKhCoAMP1I5ICVZrRLo="
+    - secure: "cxy4zYXm2v6xK+M/jm1UX88rKUJlsG+RqnmdJLxsNwhRtidQtKJgrQi5nSNGpSoV0j1Z5BB5oMXB0ztex2S65ja07e3q7zeMKmNleU39iYpPg3RAGzujElTLjT+CrGnMx54MtvYgUWfBeKmnvZoBNAqDi28faBCRH156Ej4gwFQ="
+    - secure: "HZFuB9haMWMeDrVzWCG8/4xEBn/MJ2MF0RGWKyv8hOwI2tEoLKI9RNKff5yTMMhVm1+HWFoEVSZeX9s6yO/854ddjbAdwukm+uWAiKvyXgjUbkq0V7YtfntbJZsYurISTUfsY2zX1HpiuyANr4UnEqPE88HBgt5VCodtwm2ZQPI="
